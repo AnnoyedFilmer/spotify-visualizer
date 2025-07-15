@@ -12,7 +12,7 @@ A clean, waveform-style visualizer for [Spotify Web Player](https://open.spotify
 
 ## 🛠️ Install the Extension
 
-➡️ [**Chrome Web Store – Install Lite/Pro**] (https://chrome.google.com/webstore/detail/spotify-visualizer/your-extension-id-here](https://chromewebstore.google.com/detail/spotify-visualizer-lite/ncnnchaooipooafemedommoadfpclnol)
+➡️ [**Chrome Web Store – Install Lite/Pro**] [(https://chrome.google.com/webstore/detail/spotify-visualizer/your-extension-id-here](https://chromewebstore.google.com/detail/spotify-visualizer-lite/ncnnchaooipooafemedommoadfpclnol)](https://chromewebstore.google.com/detail/spotify-visualizer-lite/ncnnchaooipooafemedommoadfpclnol)
 
 ---
 
@@ -23,7 +23,7 @@ Unlock full features:
 - 🥁 Beat-timed bounce (BPM detection)
 - 🔐 1-time license key unlock
 
-👉 [**Get a Pro Key on Gumroad**]([https://annoyedfilmer.gumroad.com/](https://talenmagistro.gumroad.com/l/luhnj)
+👉 [**Get a Pro Key on Gumroad**]([https://annoyedfilmer.gumroad.com/] https://talenmagistro.gumroad.com/l/luhnj)
 
 ---
 
