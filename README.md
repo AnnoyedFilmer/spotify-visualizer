@@ -32,7 +32,7 @@ A sleek Chrome extension that adds a customizable visualizer bar to [Spotify Web
 Get the full experience by purchasing a Pro key.
 
 🔑 **Gumroad Purchase**:  
-👉 [Buy Pro Key ($3 One-Time)](https://talenmagistro.gumroad.com/l/luhnj)
+👉 [Buy Pro Key ($1 One-Time)](https://talenmagistro.gumroad.com/l/luhnj)
 
 ---
 
