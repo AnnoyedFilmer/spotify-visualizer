@@ -1,1 +1,0 @@
-// Visualizer functionality here – toggled via chrome.storage.local check
