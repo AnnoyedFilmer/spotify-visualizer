@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Visualizer",
+  "description": "Visualizer for Spotify with optional Pro features (BPM sync, color matching)",
+  "version": "2.0.8",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://open.spotify.com/*"
+      ],
+      "js": [
+        "visualizer.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Spotify Visualizer — PRO & Settings</title>
+  <style>
+    :root{ --w: 340px; --pad: 14px; }
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:#111; color:#eee; font:14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+    body{ width:var(--w); max-height:580px; overflow-y:auto; padding:var(--pad); }
+    h2{ margin:0 0 8px 0; font-size:16px; letter-spacing:.2px; }
+    h3{ margin:8px 0; font-size:14px; font-weight:700; }
+    .block{ margin-bottom:12px; }
+    input[type="text"]{ width:100%; padding:8px 10px; border:1px solid #2a2a2a; background:#1a1a1a; color:#fff; border-radius:8px; }
+    button{ width:100%; padding:10px 12px; margin-top:10px; border:0; border-radius:10px; background:#1db954; color:#000; font-weight:700; cursor:pointer; }
+    button:hover{ filter:brightness(1.08); }
+    #status{ margin-top:8px; font-weight:600; color:#9be47a; min-height:18px; }
+    hr{ border:0; height:1px; background:#2a2a2a; margin:14px 0; }
+    .setting{ display:flex; align-items:center; gap:8px; margin:8px 0; }
+    .setting span{ flex:1; }
+    #barCount,#barWidth,#barGap{ width:100%; }
+    #barCountVal,#barWidthVal,#barGapVal{ margin-top:4px; color:#bbb; }
+    input[type="checkbox"]{ width:16px; height:16px; accent-color:#1db954; }
+    .row{ display:flex; align-items:center; gap:8px; }
+    .row a{ color:#9be47a; text-decoration:none; font-weight:600; }
+    .row a:hover{ text-decoration:underline; }
+    .hint{ color:#aaa; font-size:12px; margin-top:6px; }
+    .disabled{ opacity:.55; pointer-events:none; filter:grayscale(.1); }
+    .pro-notice{ color:#aaa; margin:6px 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="block">
+    <h2>Enter License Key</h2>
+    <input type="text" id="keyInput" placeholder="Enter your PRO key">
+    <button id="activateBtn">Activate</button>
+    <div class="row" style="justify-content:space-between; margin-top:8px;">
+      <a id="buyLink" href="https://talenmagistro.gumroad.com/l/luhnj" target="_blank" rel="noreferrer">Buy a license</a>
+      <a id="helpLink" href="https://github.com/AnnoyedFilmer" target="_blank" rel="noreferrer">Help</a>
+    </div>
+    <div id="status"></div>
+    <div class="hint">Keys are verified locally and stored on your device.</div>
+  </div>
+
+  <hr>
+
+  <div class="block">
+    <h3>Settings</h3>
+    <div id="proNotice" class="pro-notice" style="display:none;">Unlock PRO to customize these settings.</div>
+    <div id="settingsWrapper" class="disabled">
+      <label style="display:block;font-weight:600;margin-top:6px;">Bar count</label>
+      <input id="barCount" type="range" min="8" max="120" step="1" value="48">
+      <div id="barCountVal">48 bars</div>
+
+      <label class="setting" title="Automatically fits the visualizer to your screen width">
+        <input id="autoSpacing" type="checkbox" checked>
+        <span>Auto spacing (fit screen)</span>
+      </label>
+
+      <div id="manualSpacingGroup" style="margin-top:8px; display:none;">
+        <label style="display:block;font-weight:600;">Bar width</label>
+        <input id="barWidth" type="range" min="2" max="20" step="1" value="6">
+        <div id="barWidthVal">6 px</div>
+
+        <label style="display:block;font-weight:600;margin-top:10px;">Gap</label>
+        <input id="barGap" type="range" min="2" max="30" step="1" value="15">
+        <div id="barGapVal">15 px</div>
+      </div>
+
+      <label class="setting">
+        <input id="colorMatch" type="checkbox" checked>
+        <span>Enable color match</span>
+      </label>
+
+      <label class="setting">
+        <input id="showDot" type="checkbox" checked>
+        <span>Show sampling dot</span>
+      </label>
+
+      <label class="setting" title="Pro only — beat interval adapts">
+        <input id="bpmMatch" type="checkbox" checked>
+        <span>Enable BPM match (PRO)</span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
